@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-slate-950 text-slate-100 font-sans antialiased;
+    min-height: 100vh;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-slate-900;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-brand-600 rounded-full;
+  }
+}
+
+@layer components {
+  /* ── Card glass effect ───────────────────────────────────── */
+  .glass-card {
+    @apply bg-slate-900/80 backdrop-blur-sm border border-slate-700/50 rounded-2xl shadow-2xl;
+  }
+
+  /* ── Form input ──────────────────────────────────────────── */
+  .form-input {
+    @apply w-full bg-slate-800/60 border border-slate-600/50 rounded-xl px-4 py-3
+           text-slate-100 placeholder-slate-500
+           focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent
+           transition-all duration-200;
+  }
+
+  .form-input.error {
+    @apply border-red-500/70 focus:ring-red-500;
+  }
+
+  /* ── Buttons ─────────────────────────────────────────────── */
+  .btn-primary {
+    @apply w-full bg-brand-600 hover:bg-brand-500 active:bg-brand-700
+           text-white font-semibold py-3 px-6 rounded-xl
+           transition-all duration-200 transform hover:scale-[1.01] active:scale-[0.99]
+           focus:outline-none focus:ring-2 focus:ring-brand-500 focus:ring-offset-2 focus:ring-offset-slate-900
+           disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none
+           flex items-center justify-center gap-2;
+  }
+
+  .btn-secondary {
+    @apply bg-slate-700 hover:bg-slate-600 text-slate-100 font-medium py-2.5 px-5
+           rounded-xl transition-all duration-200
+           focus:outline-none focus:ring-2 focus:ring-slate-500;
+  }
+
+  .btn-danger {
+    @apply bg-red-600/20 hover:bg-red-600/30 text-red-400 hover:text-red-300
+           border border-red-600/30 font-medium py-2.5 px-5 rounded-xl
+           transition-all duration-200 flex items-center gap-2;
+  }
+
+  /* ── Badge ───────────────────────────────────────────────── */
+  .badge-admin {
+    @apply inline-flex items-center gap-1 bg-amber-500/20 text-amber-400
+           border border-amber-500/30 text-xs font-semibold px-2.5 py-1 rounded-full;
+  }
+
+  .badge-user {
+    @apply inline-flex items-center gap-1 bg-brand-500/20 text-brand-300
+           border border-brand-500/30 text-xs font-semibold px-2.5 py-1 rounded-full;
+  }
+}

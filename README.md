@@ -1,4 +1,4 @@
-# 🔐 SecureAuth — Secure User Authentication System
+#  SecureAuth — Secure User Authentication System
 
 [![Node.js](https://img.shields.io/badge/Node.js-18+-339933?logo=node.js)](https://nodejs.org)
 [![React](https://img.shields.io/badge/React-18-61DAFB?logo=react)](https://react.dev)
@@ -11,25 +11,23 @@ Implements registration, login, JWT-based session management, and role-based acc
 
 ---
 
-## ✨ Features
+##  Features
+**Secure Registration & Login** — bcrypt password hashing (salt rounds: 12)
+**JWT Authentication** — stateless tokens with automatic expiry (7 days)
+**Role-Based Access Control** — `user` and `admin` roles
+**Protected Routes** — frontend + backend double protection
+**Admin Dashboard** — user management with statistics
+**Rate Limiting** — 10 req/15 min on auth endpoints
+**Helmet** — secure HTTP response headers
+**CORS** — restricted to configured frontend origin
+**Input Validation** — express-validator on every endpoint
+**Modern Dark UI** — glassmorphism, animations, fully responsive
+**Toast Notifications** — real-time feedback
+**Password Strength Meter** — visual indicator on registration
+**Password Toggle** — show/hide password fields
 
-- 🔒 **Secure Registration & Login** — bcrypt password hashing (salt rounds: 12)
-- 🎫 **JWT Authentication** — stateless tokens with automatic expiry (7 days)
-- 👮 **Role-Based Access Control** — `user` and `admin` roles
-- 🛡️ **Protected Routes** — frontend + backend double protection
-- 📊 **Admin Dashboard** — user management with statistics
-- 🚦 **Rate Limiting** — 10 req/15 min on auth endpoints
-- 🪖 **Helmet** — secure HTTP response headers
-- 🌐 **CORS** — restricted to configured frontend origin
-- ✅ **Input Validation** — express-validator on every endpoint
-- 🎨 **Modern Dark UI** — glassmorphism, animations, fully responsive
-- 🔔 **Toast Notifications** — real-time feedback
-- 💪 **Password Strength Meter** — visual indicator on registration
-- 👁️ **Password Toggle** — show/hide password fields
 
----
-
-## 🛠 Tech Stack
+## Tech Stack
 
 | Layer | Technology |
 |-------|-----------|
@@ -46,7 +44,7 @@ Implements registration, login, JWT-based session management, and role-based acc
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 auth-project/
@@ -106,7 +104,7 @@ auth-project/
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -216,9 +214,9 @@ All JSON responses follow this shape:
 
 | Method | Route | Auth | Description |
 |--------|-------|------|-------------|
-| `POST` | `/api/auth/register` | ❌ | Create new account |
-| `POST` | `/api/auth/login` | ❌ | Login, receive JWT |
-| `GET` | `/api/auth/me` | ✅ | Get current user |
+| `POST` | `/api/auth/register` |  | Create new account |
+| `POST` | `/api/auth/login` |  | Login, receive JWT |
+| `GET` | `/api/auth/me` |  | Get current user |
 
 #### POST /api/auth/register
 ```json
@@ -279,7 +277,7 @@ Authorization: Bearer <token>
 
 ---
 
-## 🔐 Authentication Flow
+##  Authentication Flow
 
 ```
 1. User registers → password hashed with bcrypt (cost=12) → stored in MongoDB
@@ -294,7 +292,7 @@ Authorization: Bearer <token>
 
 ---
 
-## 🛡️ Security Features
+##  Security Features
 
 | Feature | Implementation |
 |---------|---------------|
@@ -313,13 +311,13 @@ Authorization: Bearer <token>
 
 ---
 
-## 📸 Screenshots
+##  Screenshots
 
 > _Add screenshots of Login, Register, Dashboard, and Admin pages here._
 
 ---
 
-## 🚀 Deployment
+##  Deployment
 
 ### Deploy Backend to Render.com (free)
 
@@ -375,6 +373,6 @@ Authorization: Bearer <token>
 
 ---
 
-## 📄 License
+##  License
 
 MIT License — feel free to use this project for learning and interviews.

@@ -1,10 +1,28 @@
-#  SecureAuth — Secure User Authentication System
+# 🔐 SecureAuth — Secure User Authentication System
+
+[![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://codecraft-wd-01-v23p.vercel.app)
+[![API Server](https://img.shields.io/badge/⚙️_API_Server-Render-46E3B7?style=for-the-badge&logo=render&logoColor=white)](https://auth-server-44zr.onrender.com/api/health)
 
 [![Node.js](https://img.shields.io/badge/Node.js-18+-339933?logo=node.js)](https://nodejs.org)
 [![React](https://img.shields.io/badge/React-18-61DAFB?logo=react)](https://react.dev)
 [![MongoDB](https://img.shields.io/badge/MongoDB-7+-47A248?logo=mongodb)](https://mongodb.com)
 [![JWT](https://img.shields.io/badge/JWT-Auth-000000?logo=json-web-tokens)](https://jwt.io)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
+## 🌐 Live Demo & Deployment
+
+| Resource | Link |
+|----------|------|
+| 🚀 **Live Website (Frontend)** | **[https://codecraft-wd-01-v23p.vercel.app](https://codecraft-wd-01-v23p.vercel.app)** |
+| ⚙️ **Backend API (Render)** | **[https://auth-server-44zr.onrender.com](https://auth-server-44zr.onrender.com)** |
+
+### 🔑 Demo Login Credentials
+| Role | Email | Password |
+|------|-------|----------|
+| 👤 **User** | `user@demo.com` | `User@12345` |
+| 👑 **Admin** | `admin@demo.com` | `Admin@12345` |
+
+---
 
 A **production-quality, full-stack authentication system** built as an interview assignment.
 Implements registration, login, JWT-based session management, and role-based access control (RBAC) with a beautiful, modern dark UI.
